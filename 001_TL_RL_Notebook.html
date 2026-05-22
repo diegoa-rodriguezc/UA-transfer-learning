@@ -7685,7 +7685,7 @@ PyTorch version: 2.10.0+cu128
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Arquitectura-de-la-Red-Q">Arquitectura de la Red Q<a class="anchor-link" href="#Arquitectura-de-la-Red-Q">¶</a></h3><p>La red neuronal aproxima la función Q: $Q(s, a; \\theta)$ donde $\\theta$ son los parámetros.
+<h3 id="Arquitectura-de-la-Red-Q">Arquitectura de la Red Q<a class="anchor-link" href="#Arquitectura-de-la-Red-Q">¶</a></h3><p>La red neuronal aproxima la función Q: $Q(s, a; \theta)$ donde $\theta$ son los parámetros.
 Para CartPole con estado de dimensión 4 y 2 acciones, usamos una red feedforward con dos capas ocultas.</p>
 </div>
 </div>
@@ -8122,9 +8122,9 @@ ENTRENANDO TEACHER (DQN Expert)
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Teor%C3%ADa-(Rusu-et-al.,-2015;-Hinton-et-al.,-2014)">Teoría (Rusu et al., 2015; Hinton et al., 2014)<a class="anchor-link" href="#Teor%C3%ADa-(Rusu-et-al.,-2015;-Hinton-et-al.,-2014)">¶</a></h3><p><strong>Policy Distillation</strong> transfiere conocimiento minimizando la divergencia entre las distribuciones de acción del teacher y el student:</p>
-<p>$$\\min_\\theta D_{KL}(\\pi^{teacher}(\\cdot|s) \\| \\pi^{student}_\\theta(\\cdot|s))$$</p>
-<p>Donde las distribuciones se obtienen aplicando softmax con temperatura $\\tau$ sobre los Q-values:</p>
-<p>$$\\pi(a|s) = \\frac{e^{Q(s,a)/\\tau}}{\\sum_{a'} e^{Q(s,a')/\\tau}}$$</p>
+<p>$$\min_\theta D_{KL}(\pi^{teacher}(\cdot|s) \| \pi^{student}_\theta(\cdot|s))$$</p>
+<p>Donde las distribuciones se obtienen aplicando softmax con temperatura $\tau$ sobre los Q-values:</p>
+<p>$$\pi(a|s) = \frac{e^{Q(s,a)/\tau}}{\sum_{a'} e^{Q(s,a')/\tau}}$$</p>
 <p><strong>Temperatura τ:</strong></p>
 <ul>
 <li>τ alta → distribución más suave (más información sobre Q relativos)</li>
@@ -8287,10 +8287,10 @@ Rendimiento final Policy Distillation: 106.0
 <h3 id="Teor%C3%ADa-(Ng,-Harada-&amp;-Russell,-1999)">Teoría (Ng, Harada &amp; Russell, 1999)<a class="anchor-link" href="#Teor%C3%ADa-(Ng,-Harada-&amp;-Russell,-1999)">¶</a></h3><p><strong>Reward Shaping</strong> reconstruye la función de recompensa con conocimiento externo:</p>
 <p>$$R'(s, a, s') = R(s, a, s') + F(s, a, s')$$</p>
 <p>Para <strong>PBRS</strong>, la función de shaping es la diferencia de potenciales:</p>
-<p>$$F(s, a, s') = \\gamma \\Phi(s') - \\Phi(s)$$</p>
-<p>Donde $\\Phi(s)$ es una función potencial que evalúa la calidad de un estado.</p>
+<p>$$F(s, a, s') = \gamma \Phi(s') - \Phi(s)$$</p>
+<p>Donde $\Phi(s)$ es una función potencial que evalúa la calidad de un estado.</p>
 <p><strong>Propiedad clave:</strong> PBRS preserva la invarianza de la política óptima:
-$$Q^*_{M'}(s, a) = Q^*_M(s, a) - \\Phi(s)$$</p>
+$$Q^*_{M'}(s, a) = Q^*_M(s, a) - \Phi(s)$$</p>
 </div>
 </div>
 </div>
@@ -8301,7 +8301,7 @@ $$Q^*_{M'}(s, a) = Q^*_M(s, a) - \\Phi(s)$$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Implementaci%C3%B3n">Implementación<a class="anchor-link" href="#Implementaci%C3%B3n">¶</a></h3><p>Usamos $\\Phi(s) = V^{teacher}(s) = \\max_a Q^{teacher}(s, a)$ como función potencial.</p>
+<h3 id="Implementaci%C3%B3n">Implementación<a class="anchor-link" href="#Implementaci%C3%B3n">¶</a></h3><p>Usamos $\Phi(s) = V^{teacher}(s) = \max_a Q^{teacher}(s, a)$ como función potencial.</p>
 <p>Esto transfiere el conocimiento del teacher sin alterar la política óptima del entorno.</p>
 </div>
 </div>
