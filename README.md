@@ -1,4 +1,4 @@
-# UA-transfer-learning
+# Transfer Learning
 
 Implementaciones de **Transfer Learning (TL)** en **Deep Reinforcement Learning (RL)**, sobre dos entornos clásicos de [Gymnasium](https://gymnasium.farama.org) (CartPole y HalfCheetah).
 
