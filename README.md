@@ -82,6 +82,9 @@ El notebook también genera videos `.mp4` de la locomoción aprendida por cada a
 | [`transfer_learning.pdf`](transfer_learning.pdf) | Survey de Zhu, Lin & Zhou (2023) — referencia teórica del proyecto. Las secciones citadas en los notebooks (§4.1, §4.2, §4.3.1) corresponden a este documento. |
 | `001_TL_RL_Notebook.html` | Export HTML del primer notebook con todas las salidas y gráficas. |
 | `002_TL_Representation_Transfer.html` | Export HTML del segundo notebook con todas las salidas y gráficas. |
+| `TL_DRL_Presentacion.pdf` | Presentación sobre Transfer Learning. |
+| [Vídeo de presentación](https://uniandes-my.sharepoint.com/:v:/g/personal/da_rodriguezc123_uniandes_edu_co/IQCxdL-1TZ7uQIP4JLu0SWv8AUwkif9TaS9_2aCXOnkSPZA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Pr293T) | Vídeo presentación sobre Transfer Learning. *(Para acceder al vídeo se debe tener un dominio @uniandes.edu.co)* |
+
 
 ## Referencias
 
