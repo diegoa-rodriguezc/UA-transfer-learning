@@ -26,6 +26,7 @@ UA-transfer-learning/
 ├── 002_TL_Representation_Transfer.ipynb  # TD3 + Frozen / Fine-Tuning (HalfCheetah-v5)
 ├── 002_TL_Representation_Transfer.html   # Export HTML del notebook 002
 ├── transfer_learning.pdf                 # Survey(paper) de Zhu, Lin & Zhou (2023)
+├── TL_DRL_Presentacion.pdf               # Presentación realizada sobre Transfer Learning
 ├── README.md
 └── .gitignore
 ```
